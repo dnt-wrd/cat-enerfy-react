@@ -1,0 +1,34 @@
+.buttonOrder {
+    cursor: pointer;
+    border: none;
+    padding: 7px;
+    margin: auto;
+    width: 100%;
+    background-color:  #68B738;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    /* or 125% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+
+    /* basic-white */
+    height: 40px;
+    color: #FFFFFF;
+}
+
+.hoverHover:hover {
+    background: #5EAA2F;
+    /*cursor: url(img/cat-black.svg), auto;*/
+}
+
+.hoverHover:active {
+    /*background: red;*/
+    opacity: 0.3;
+}

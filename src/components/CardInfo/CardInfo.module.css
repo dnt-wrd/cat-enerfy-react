@@ -1,0 +1,8 @@
+.cardInfoSection {
+    margin-bottom: 71px;
+}
+
+.cardInfoWrap {
+    column-gap: 80px;
+    display: flex;
+}

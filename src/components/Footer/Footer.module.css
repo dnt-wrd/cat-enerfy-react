@@ -1,0 +1,20 @@
+.footer {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    vertical-align: middle;
+}
+
+.socialNetwork {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socialNetwork a {
+    margin: 0 28px;
+}

@@ -1,0 +1,22 @@
+.howIsWorksSection {
+    margin-bottom: 71px;
+}
+
+.headerH2 {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+}
+
+.howIsWorks {
+    margin-bottom: 32px;
+}
+
+.cardNumberWrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 80px;
+}

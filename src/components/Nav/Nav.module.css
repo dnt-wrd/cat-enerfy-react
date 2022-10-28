@@ -1,0 +1,52 @@
+.navigation {
+    width: 100%;
+}
+
+.navigationMain {
+    position: absolute;
+    top: 53px;
+}
+
+.navigationCatalog {
+    margin-bottom: 90px;
+}
+
+.navigationLayout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    vertical-align: middle;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menuItem {
+    margin-right: 32px;
+}
+
+.menuItem:last-child {
+    margin: 0;
+}
+
+
+.menuItemLinkCatalog:hover:after,
+.menuItemLinkCatalog.active:after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #68B738;
+    position: absolute;
+    bottom: -8px;
+    text-transform: uppercase;
+    color: #111111;
+    position: relative;
+}

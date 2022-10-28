@@ -1,0 +1,164 @@
+.headerCatalog {
+    margin-top: 180px;
+}
+
+.flexTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.h1Catalog {
+    margin-bottom: 113px;
+}
+
+.gridCatalog {
+    display: grid;
+    grid-template-columns: repeat(4, 245px);
+    grid-template-rows: auto;
+    column-gap: 80px;
+    row-gap: 143px;
+    /*grid-row-gap: 143px;*/
+    margin-bottom: 100px;
+}
+
+@media all and (max-width: 768px) {
+    .gridCatalog {
+        grid-template-columns: repeat(2, 324px);
+        column-gap: 60px;
+    }
+
+    .bigGridAddProducts {
+        grid-template-columns: 1fr;
+        row-gap: 97px;
+        grid-template: "table-grid"
+                       "grid-big-button";
+    }
+
+    .table {
+        grid-area: table-grid;
+    }
+
+    .gridPicture {
+        background-image: url("../../assets/big-grid-background-button.svg");
+        width: 100%;
+        height: 100%;
+        flex-direction: row;
+        padding: 58px 0;
+    }
+
+    .gridPicture img,
+    .gridBigButtonText {
+        margin: auto;
+    }
+
+    .gridBigButtonText {
+        max-width: 161px;
+        text-align: left;
+    }
+
+    .h3Adds:before {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 2px;
+        width: 50vw;
+        background: #68B738;
+        top: calc(50% - 1px);
+        right: calc(100% + 25px);
+    }
+}
+
+.addProducts {
+    margin-bottom: 86px;
+
+    width: 100%;
+    overflow: hidden;
+}
+
+.bigGridAddProducts {
+    display: grid;
+    grid-template-columns: auto  1fr;
+
+
+
+    /*grid-template-rows: repeat(4, 1fr);*/
+    column-gap: 80px;
+
+}
+
+.gridPicture {
+    /*grid-area: pic;*/
+    display: flex;
+    align-items: center;
+    background-image: url(../../assets/gift-photo-desktop.svg);
+    /* background-position: top left; */
+    background-repeat: revert;
+    width: 245px;
+    height: 100%;
+    justify-content: space-between;
+    border: none;
+    flex-direction: column;
+    /* margin: auto; */
+    padding: 63px 43px 43px;
+
+    cursor: pointer;
+
+}
+
+.gridBigButtonText {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    /* or 125% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.h3Adds {
+    /*position: absolute;*/
+    position: relative;
+    display: inline-block;
+
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+    /* identical to box height, or 100% */
+
+    /*text-align: center;*/
+
+    color: #000000;
+
+    /*background-color: red;*/
+    /*z-index: 21;*/
+
+    /*padding: 0 40px;*/
+    /*display: inline-block;*/
+    /*margin-left: 70px;*/
+
+    margin-bottom: 81px;
+
+    /*background-color: red;*/
+    padding-left: 20px;
+
+    left: -30px;
+}
+
+.h3Adds:before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100vw;
+    background: #68B738;
+    top: calc(50% - 1px);
+    right: calc(100% + 25px);
+}

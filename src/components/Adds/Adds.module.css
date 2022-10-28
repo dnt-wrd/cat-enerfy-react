@@ -1,0 +1,96 @@
+.smallGridElement {
+    position: relative;
+    /*margin-bottom: 100px;*/
+    /*grid-area: element-grid;*/
+    display: grid;
+    grid-template: "name amount price button-green"
+                    / minmax(161px, 325px) minmax(132px, 245px) minmax(80px, 280px) 245px;
+
+    /*box-shadow: -4px 0px 0px 4px blue;*/
+
+    border-bottom: 1px solid #CDCDCD;
+}
+
+.smallGridElement:first-child {
+    border-top: 1px solid #CDCDCD;
+}
+
+@media all and (max-width: 768px) {
+    .smallGridElement {
+        /*grid-template-columns: 1fr 1fr 1fr;*/
+        /*grid-template-rows: 1fr 1fr;*/
+        grid-template: "name amount price"
+                        "button-green button-green button-green" /
+                        auto 30% 15%;
+
+        border-left: 1px solid #CDCDCD;
+        border-right: 1px solid #CDCDCD;
+        border-bottom: 1px solid #CDCDCD;
+        padding: 28px;
+    }
+}
+.gridName {
+    grid-area: name;
+    /*background-color: red;*/
+
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    /* identical to box height, or 100% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.gridAmount {
+    grid-area: amount;
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 125% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    /* special_dark-grey */
+
+    color: #444444;
+}
+
+.gridAmount,
+.gridPrice {
+    flex-direction: row-reverse;
+}
+
+.gridPrice {
+    grid-area: price;
+    /*background-color: red;*/
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 125% */
+
+    display: flex;
+    align-items: center;
+
+    /* special_dark-grey */
+
+    color: #444444;
+}
+
+.gridButtonContainer {
+    display: flex;
+    padding: 15px 0px;
+    grid-area: button-green;
+}

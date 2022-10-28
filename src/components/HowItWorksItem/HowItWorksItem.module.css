@@ -1,0 +1,52 @@
+.smallCard {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 280px;
+    align-items: flex-start;
+    position: relative;
+    padding-top: 40px;
+}
+
+.smallCard:after {
+    counter-increment: section;
+    content: counter(section);
+    display: block;
+    position: absolute;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 280px;
+    line-height: 280px;
+    text-align: center;
+    color: #F2F2F2;
+    top: 0;
+    right: 0;
+}
+
+.smallCardSquare {
+    min-width: 80px;
+    min-height: 80px;
+    width: 80px;
+    height: 80px;
+    background: #68B738;
+    position: relative;
+    margin-bottom: 31px;
+}
+
+.smallCardImage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.smallCardText {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #444444;
+    z-index: 1;
+}

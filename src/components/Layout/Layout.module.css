@@ -1,0 +1,12 @@
+.layout {
+    max-width: 1220px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media all and (max-width: 768px) {
+    .layout {
+        max-width: 706px;
+        margin: 0 auto;
+    }
+}

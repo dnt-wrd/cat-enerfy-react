@@ -1,0 +1,118 @@
+h1 {
+    font-size: 60px;
+}
+
+.section-3-h1 {
+    margin-bottom: 32px;
+}
+
+.h1-catalog {
+    margin-bottom: 113px;
+}
+
+.header-h2 {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+}
+
+.big-div-h2 {
+    margin-left: 52px;
+}
+
+.h3-header {
+    size: 20px;
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
+
+h3 {
+    size:20px;
+}
+
+.h3-grid {
+    text-transform: uppercase;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 21px;
+    margin: auto auto 21px;
+    text-align: center;
+    max-width: 145px;
+}
+
+.h3-adds {
+    position: relative;
+    display: inline-block;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+    color: #000000;
+    margin-bottom: 81px;
+    padding-left: 20px;
+    left: -30px;
+}
+
+.h3-dops {
+    position: absolute;
+    top: -15px;
+    left: 50px;
+    background-color: white;
+
+    padding-left: -40px;
+    margin-left-left: 200px;
+}
+
+.h3-adds:after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100vw;
+    background: #68B738;
+    top: calc(50% - 1px);
+    left: calc(100% + 25px);
+}
+
+.h3-adds:before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100vw;
+    background: #68B738;
+    top: calc(50% - 1px);
+    right: calc(100% + 25px);
+}
+
+.line-h3 {
+    position: relative;
+    max-width: 40vw;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: red;
+    z-index: 2;
+    max-width: 1220px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media all and (max-width: 768px) {
+    .h3-adds:before {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 2px;
+        width: 50vw;
+        background: #68B738;
+        top: calc(50% - 1px);
+        right: calc(100% + 25px);
+    }
+}
+
